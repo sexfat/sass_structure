@@ -1,0 +1,96 @@
+// ----------------------------------------------------------------------
+
+  // grid
+
+// ----------------------------------------------------------------------
+// commom
+ // .col_1 { width: 8.33333%;  }
+ // .col_12 { width: 100%; }
+
+ //moblie
+ //s_col_1  { width: 8.33333%;  }
+
+ //medium
+ //m_col_1  { width: 8.33333%;  }
+
+
+@import "../layouts/rwd";
+
+*,
+*:after,
+*:before {
+  @include box-sizing(border-box);
+}
+.row{
+  @include rem("max-width", $maxWidth);
+  @include clearfix();
+	margin:0 auto;
+}
+
+
+
+
+
+//commom
+.col{
+  margin-left: 1.6%;
+}
+
+
+%col {
+  float: left;
+}
+
+@for $i from 1 through $grid-columns {
+
+  .col_#{$i} {
+    @extend %col;
+    width: ($i / $grid-columns) * 100%;
+  }
+
+}
+.col:first-child,
+.col_12 {
+  margin-left: 0;
+}
+
+
+// @include respond-to(medium) {
+//   %m_col {
+//     float: left;
+//   }
+//
+//   @for $i from 1 through $grid-columns {
+//
+//     .m_col_#{$i} {
+//       @extend %m_col;
+//       width: ($i / $grid-columns) * 100%;
+//     }
+//     .m_col:first-child,
+//     .m_col_12 {
+//       margin-left: 0;
+//     }
+//   }
+//  }
+
+
+ //mobile grid
+
+ // @include respond-to(small) {
+ //
+ //   %s_col {
+ //     float: left;
+ //   }
+ //
+ //   @for $i from 1 through $grid-columns {
+ //
+ //     .s_col_#{$i} {
+ //       @extend %s_col;
+ //       width: ($i / $grid-columns) * 100%;
+ //     }
+ //     .s_col:first-child,
+ //     .s_col_12 {
+ //       margin-left: 0;
+ //     }
+ //   }
+ // }

@@ -1,0 +1,30 @@
+// ----------------------------------------------------------------------
+
+  // Rwd
+
+// ----------------------------------------------------------------------
+
+
+// @include respond-to(small) { ... }
+// @include respond-to(medium) { ... }
+// @include respond-to(large) { ... }
+
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == "small" {
+    @media all and (max-width: $small) {
+      @content;
+    }
+  }
+
+  @else if $breakpoint == "medium" {
+    @media all and (min-width: $medium) and (max-width: $medium_max)  {
+      @content;
+    }
+  }
+
+  @else if $breakpoint == "large" {
+    @media all and (min-width: $large) {
+      @content;
+    }
+  }
+}

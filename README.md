@@ -1,13 +1,11 @@
-# frame
-## theme
-##plugins
-##everybody
-
 ## 1 install node.js
+
+https://nodejs.org/en/
 
 ## 2 install sass
 
 ###mac
+
 <code>sudo gem install sass<code>
 
 ###pc installer
@@ -15,7 +13,7 @@
 1. Install Ruby installer
 2. gem install sass
 
-## 3 install grunt
+## 3 Install grunt
 
 <code>npm install -g grunt-cli</code>
 
@@ -24,7 +22,9 @@
 <code>npm i</code>
 
 
-##sass Structure
+
+
+##Sass Structure
 
 ```
 sass/

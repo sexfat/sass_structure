@@ -2,20 +2,32 @@
 
 https://nodejs.org/en/
 
+
+
+
 ## 2 install sass
 
 ###mac
 
 <code>sudo gem install sass</code>
 
+
+
+
 ###pc installer
 
 1. Install Ruby installer
-2. gem install sass
+2. <code>gem install sass</code>
+
+
+
 
 ## 3 Install grunt
 
 <code>npm install -g grunt-cli</code>
+
+
+
 
 ## 4 plugins install
 

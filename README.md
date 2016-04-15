@@ -6,7 +6,7 @@ https://nodejs.org/en/
 
 ###mac
 
-<code>sudo gem install sass<code>
+<code>sudo gem install sass</code>
 
 ###pc installer
 

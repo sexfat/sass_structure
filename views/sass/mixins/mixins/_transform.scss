@@ -1,0 +1,51 @@
+// ----------------------------------------------------------------------
+// Transform
+// ----------------------------------------------------------------------
+// example: @include transform();
+// example: @include scale(1.2);
+@mixin transform($transforms) {
+  -moz-transform: $transforms;
+  -o-transform: $transforms;
+  -ms-transform: $transforms;
+  -webkit-transform: $transforms;
+  transform: $transforms;
+}
+//scale
+@mixin scale($scale) {
+   @include transform(scale($scale));
+}
+// skew
+@mixin skew ($x, $y) {
+   @include transform(skew(#{$x}deg, #{$y}deg));
+}
+//all
+@mixin transforms($type, $values...) {
+  $n: length($values);
+  $i: 1;
+  $originVal: ();
+  @while $i <= $n {
+    $itemVal: (nth($values, $i));
+    @if $type == "rotate" or $type == "rotateY" or $type == "rotateX" {
+      $originVal: append($originVal, $itemVal + deg);
+    }
+    @else {
+      $originVal: append($originVal, $itemVal );
+    }
+    $i: $i + 1;
+  }
+  -webkit-transform: #{$type} ($originVal);
+  -moz-transform: #{$type} ($originVal);
+  transform: #{$type} ($originVal);
+}
+// //rotate
+// @mixin rotate ($deg) {
+//   @include transform(rotate(#{$deg}deg));
+// }
+//transform origin
+// @mixin transform-origin ($origin) {
+//     moz-transform-origin: $origin;
+// 	     -o-transform-origin: $origin;
+// 	    -ms-transform-origin: $origin;
+// 	-webkit-transform-origin: $origin;
+//           transform-origin: $origin;
+// }

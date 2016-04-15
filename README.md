@@ -72,6 +72,11 @@ sass/
 |   |– _mixins.scss      # Sass Mixins
 |   |– _helpers.scss     # Class & placeholders helpers
 |
+
+|– animation/
+|– - animation/..        # Sass animation group
+|   |– animation.scss   # Sass animation styles
+|
 |– vendors/
 |   |– _bootstrap.scss   # Bootstrap
 |   |– _jquery-ui.scss   # jQuery UI
@@ -79,4 +84,5 @@ sass/
 |
 |
 `– style.scss            # Primary Sass file
+`– animation.scss        # animation Sass file
 ```

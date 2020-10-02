@@ -1,7 +1,5 @@
-#id {
-
-
-font-size: 80px;
+@include respond(small) {
+    //手機版
 
 
 

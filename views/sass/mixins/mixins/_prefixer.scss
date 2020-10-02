@@ -1,0 +1,11 @@
+//前綴
+@mixin css3($property, $value) {
+
+    @each $prefix in '',
+    -o-,
+    -webkit-,
+    -moz- {
+        #{$prefix}#{$property}: $value;
+
+    }
+}

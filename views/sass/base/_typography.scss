@@ -1,0 +1,12 @@
+body {
+    font-family: $fontfamilys;
+    line-height: $line_height;
+    font-weight: $font_weight;
+    font-size: $regularSize;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: $base_color;
+    letter-spacing: $letter-spacing;
+    word-spacing: $word-spacing;
+}

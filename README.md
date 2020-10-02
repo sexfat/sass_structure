@@ -9,30 +9,15 @@ https://nodejs.org/en/
 
 ###mac
 
-<code>sudo gem install sass</code>
+<code>sudo npm install sass -g</code>
 
 
 
 
 ###pc installer
 
-1. Install Ruby installer
-2. <code>gem install sass</code>
 
-
-
-
-## 3 Install grunt
-
-<code>npm install -g grunt-cli</code>
-
-
-
-
-## 4 plugins install
-
-<code>npm i</code>
-
+2. <code>npm install sass -g</code>
 
 
 

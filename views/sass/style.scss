@@ -1,1 +1,28 @@
+//base
+
 @import "base/variables";
+@import "base/reset";
+@import "base/typography";
+@import "base/color";
+
+//mixin
+@import "mixins/mixin";
+
+
+//vendors
+// 套件放置處 例如owl 一些常用套件的css 
+
+//components 組件 >  按鈕 / 麵包屑 / 標題 / 表單 / 表格 的scss放置處
+@import "components/button";
+
+//modules
+@import "modules/rwd";
+
+//layout
+@import "layouts/header";
+@import "layouts/footer";
+@import "layouts/sidebar";
+
+
+//page 含手機版 平板 桌機版本
+@import "pages/home"; //首頁
